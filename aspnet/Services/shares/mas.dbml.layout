@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="mas">
+  <DataContextMoniker Name="/masDataContext" />
+  <nestedChildShapes>
+    <classShape Id="81a1a25a-c114-44ce-aeba-a43db8f07501" absoluteBounds="0.625, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/masDataContext/Division" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d55b873e-f309-455c-8c77-0fa6a8bb17ca" absoluteBounds="0.64, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a179cba9-0fbe-4130-b19a-bbc1144fe9f2" absoluteBounds="0.75, 2.75, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/masDataContext/Emp" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0af5f729-f381-41b7-825e-6d5515402634" absoluteBounds="0.76500000000000012, 3.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,400 @@
+﻿body {
+    margin: 0;
+    background-color: #f2f2f2;
+    /* background: #e5e4e4;*/
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+.title { clear:both; }
+.clearfix::after {
+    content: "";
+    clear: both;
+    position:fixed;
+}
+.meu_fonts {
+    font-family:  Tahoma;
+    font-size: 13px;
+}
+.nav-panel-head {
+    margin-left: 3px;
+    font-family: Tahoma;
+    font-size: 13px;
+    vertical-align:middle;
+}
+.nav-panel-item {
+    margin-left: 18px;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+.logo {
+    height: 32px;
+    -webkit-transition: -webkit-transform 0.4s ease-out;
+    -moz-transition: -moz-transform 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+}
+.signin-show-photo {
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;     
+}
+
+.warpper{
+    position:relative;
+   
+}
+li a {
+    font-family: 'Segoe UI';
+    font-size: 12px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    background: #fff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+            color: #f1f1f1;
+    }
+    .sidenav .title {
+        position: absolute;
+        top: 0;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .sidenav .notify {
+        position: relative;
+        clear: both;
+        float: left;
+        margin: 5px 0px;
+        width: 185px;
+        height: 30px;
+        overflow: hidden;
+        border: 1px solid #e9e9e9;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    overflow: hidden;
+    background-color: #e9e9e9;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index:999;
+    display:none; /*new*/
+}
+#id_main_area {
+    transition: margin-left .5s;
+    display: none; /*new*/
+}
+#mySidenav {
+   display: none; /*new*/
+}
+
+#wait_prog {
+    transition: margin-left .5s;
+    font-family:'Segoe UI';
+    font-size:14px;
+    color:firebrick;
+}
+
+
+#inner_html .content {
+    transition: ease-in-out .5s;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+
+.main_area {
+    padding: 16px;
+    margin-top: 50px;
+    height: auto; 
+}
+
+
+/* The form show message */
+
+.form-msg {
+    margin-left: -250px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 40px;
+    margin-left: 4px;
+    margin-left: 0;
+    transition: margin-left .5s;
+}
+.form-msg-container {
+    margin-left: -250px;
+    width: 190px;
+    height: 350px;
+    padding: 0px;
+    background-color: rgba( 233, 233, 233, 0.8 );
+    overflow-y: auto;
+    margin-left: 0;
+    transition: margin-left .5s;
+}
+
+/* Add styles to the form container */
+.form-container {
+    margin-left: -250px;
+    width: 190px;
+    height: 350px;
+    /*padding: 10px; */
+    background-color: #f2f2f2;
+    margin-left: 0;
+    transition: margin-left .5s;
+}
+
+.hub_msg_info {
+    position: fixed;
+    bottom: 0;
+    width :120px;
+    left: 0;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: margin-left .5s;
+}
+
+.css-bi-cursor {
+   cursor:pointer;
+}
+
+.badge-notify-red {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 4px 6px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+.badge-notify-green {
+    position: absolute;
+    top: 0px;
+    right: -12px;
+    padding: 4px 6px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+.due-notify-red {
+    position: absolute;
+    top: 0px;
+    right: 8px;
+    padding: 4px 6px;
+    margin-top: 2px;
+    border-radius: 50%;
+    background-color: brown;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+
+#notify-inbox { display:none; }
+
+.css-bi-notify :hover {
+    background-color: orange;
+}
+
+.css-bi-topbar :hover {
+    background-color: aquamarine;
+}
+
+.css-bi-topbar :active {
+    background-color: orange;
+}
+
+.css-bi-print :hover {
+    background-color: aquamarine;
+}
+
+.css-bi-print :active {
+    background-color: orange;
+}
+
+.css-bi-button :hover {
+    padding-left: 1px;
+    background-color: aquamarine;
+}
+
+.css-bi-button :active {
+    padding: 0px;
+    background-color: orange;
+}
+
+.zoom-image {
+    padding: 50px;
+    background-color: green;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.zoom-image:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+textarea:focus {
+    outline: none;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+/*--------------pdf------------*/
+/*left flyout form print ms report*/
+/* The side navigation menu */
+.psidenav {
+    height: 99%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /*#111 Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 30px; /*60  Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+    /* The navigation menu links */
+    .psidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+        /* When you mouse over the navigation links, change their color */
+        .psidenav a:hover {
+            color: #f1f1f1;
+        }
+
+    /* Position and style the close button (top right corner) */
+    .psidenav .closebtn {
+        position: absolute;
+        top: -15px;
+        right: 25px;
+        font-size: 32px;
+        margin-left: 50px;
+        color: blue;
+    }
+
+    .psidenav .title-rep {
+        position: absolute;
+        top: 5px;
+        font-family: Tahoma;
+        font-size: 15px;
+        margin-left: 20px;
+        color: blue;
+    }
+    .psidenav .title-help {
+        position: absolute;
+        top: 5px;
+        font-family: Tahoma;
+        font-size: 15px;
+        margin-left: 10px;
+        color: green;
+    }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#ms-content {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: white;
+}
+
+#ms-help {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: white;
+}
+
+#ms-clip {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: white;
+}
+
+#ms-pdf {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: white;
+}
+
+#ms-monitor {
+    transition: margin-left .5s;
+    padding: 10px;
+    background-color: white;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .psidenav {
+        padding-top: 15px;
+    }
+
+        .psidenav a {
+            font-size: 18px;
+        }
+}
+
