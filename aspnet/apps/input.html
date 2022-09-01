@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+     <script type="text/javascript" src="apps/input.js"></script>
+     <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th {
+            height: 70px;
+        }
+
+        tr {
+            background-color :white;
+        }
+
+       tr:not(:first-child):hover{
+           background-color: coral;
+       }
+
+       .selected {
+            background-color: #008cb9;
+            color: #FFF;
+        }
+
+   </style>   
+</head>
+<body>
+    <div style="clear: both; margin-bottom:10px;" />
+                   
+       <div style=" clear:both;" />
+       <div style="clear: both; margin-bottom:10px;" />
+        <div style="  position:relative; clear:   both;">
+            <input type="button" id="add_button" class="bi-no-css bi-input-fonts " style="margin-left:10px; margin-bottom:5px; width:80px; height:26px;" value="เพิ่มข้อมูล" />
+            <input type="button" id="del_button" class="bi-no-css bi-input-fonts" style="margin-left:10px;  width:60px;margin-bottom:5px; height:26px;" value="ลบทิ้ง" />
+            <input class="bi-no-css bi-input-fonts" style="margin-left:50px;  width:90px;margin-bottom:5px; height:26px;" type="button" id="save_button" value="บันทึก Save" />
+            <input class="bi-no-css bi-input-fonts" style="margin-left:80px;  width:70px;margin-bottom:5px; height:26px;" type="button" id="open_button" value="เปิดแฟ้ม" />
+        </div>
+        <div style=" clear:both; margin-bottom:5px;" />
+             
+        <div><label id="info_mode" style=" float: left; margin-left:10px;  margin-top:10px; padding-bottom:5px; font-size:16px;  color:Blue;">Mode: เพิ่มข้อมูล</label></div>
+
+                <div style=" clear:both;" />
+                <div style="padding:10px; float:left; position:relative; width:400px;">
+                    <div style="clear: both;margin-bottom:2px;"></div>
+                    <label style=" float: left; position: relative; margin-top:3px; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:100px; text-align:right; ">รหัส : </label>
+                    <input id="emp_code" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:100px;  " />
+                    <div style="clear: both;margin-bottom:4px;"></div>
+                    <label style="float: left; position: relative; margin-top:3px; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:100px; text-align:right; ">ชื่อ-เจ้าหน้าที่ : </label>
+                    <input id="emp_name" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:200px;  " />
+
+                    <div style="clear: both;margin-bottom:3px;"></div>
+                    <label style="float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:100px; text-align:right; ">วันเกิด : </label>
+                    <div id="emp_birth" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:100px;  " />
+
+                    <div style="clear: both;margin-bottom:3px;"></div>
+                    <label style=" float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:100px; text-align:right; ">แผนก : </label>
+                    <div id="Division_code" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:100px;  " />
+                    <div style="clear: both;margin-bottom:3px;"></div>
+                    <label style=" float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:100px; text-align:right; ">เงินเดือน : </label>
+                    <div id="emp_salary" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:100px;  " />
+                    <div style="padding: 10px; clear:both;">
+                    <label style=" float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 15px; width:110px; text-align:right; ">เริ่มงาน : </label>
+                    <div id="emp_start" class="bi-input-fonts" style="float: left; position: relative; margin-left: 0px; width:100px;  " />
+                    
+                    <div style="clear: both;margin-bottom:10px;"></div>
+                    <label style=" float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 16px; width:100px;text-align:right;">สถานะ : </label>
+                    <div class="bi-input-fonts" style="margin: 3px; width:120px; float:left; position:relative;" id="rb_emp"> เจ้าหน้าที่ (E)</div>
+                    <div class="bi-input-fonts" style="margin: 3px;  width:120px; float:left;" id="rb_guide">ตัวแทน (P)</div>
+                    <div style=" clear:both;" />
+                    <label style=" float: left; position: relative; margin-left: 10px;  margin-right: 10px; padding-bottom: 5px; font-size: 16px; width:100px;text-align:right;">สิทธิ : </label>
+                    <div id="emp_entry" class="bi-input-fonts" style="margin: 3px; width:110px; float:left; position:relative;">บันทึกข้อมูล</div>
+                    <div id="emp_query" class="bi-input-fonts" style="margin: 3px; width:120px; float:left; position:relative;">สอบถาม</div>
+                    <div style=" clear:both;" />
+                    <div class="bi-input-fonts" style="margin: 3px; margin-left:10px;  float:left; position:relative;width:100px; text-align:right;">ใช้งาน :</div>
+                    <div id="emp_status" class="bi-input-fonts" style="margin-left:10px;  margin-top: 8px; float: left; position: relative; width:10px;" />
+                    <div class="bi-input-fonts" style="margin: 5px; float:left; position:relative;">เลขกลุ่ม :</div>
+                    <div id="emp_group" class="bi-input-fonts" style=" float: left;  position: relative; margin-top: 3px;" />
+                    <div style="clear: both;margin-bottom:5px;"></div>
+                </div>
+            </div>
+      
+    <div id="id-table" style="float:left; position:relative; ">
+        
+    </div>
+            
+</body>
+</html>
